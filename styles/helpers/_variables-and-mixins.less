@@ -1,0 +1,133 @@
+/////////////////
+////VARIABLES////
+/////////////////
+
+//COLORS//
+@white: rgb(255, 255, 255);
+@white-rgba-7: rgba(255, 255, 255, .7);
+@white-rgba-4: rgba(255, 255, 255, .4);
+
+@black: rgb(0, 0, 0);
+@black-rgba-7: rgba(0, 0, 0, .7);
+@black-rgba-4: rgba(0, 0, 0, .4);
+
+@pre-text-color: #454547;
+@dark-grey: rgb(79, 79, 79);
+
+@red: rgb(181, 38, 4);
+@cherry: rgb(97, 33, 51);
+
+
+//products colors
+
+@spice: #943d60;
+
+@posie-k: #891d41;
+
+@koko-k: #d19398;
+
+@dolce-k: #c96c5b;
+
+@mary-jo-k: #b80323;
+
+@k-22: #b32603;
+
+@exposed: #d49e86;
+
+@moon: #b77d7a;
+
+@pumpkin: #c15c3e;
+
+@kristen: #ca525c;
+
+@true-brown-k: #742b28;
+
+@brown-sugar: #a46754;
+
+
+/////////////////
+/////MIXINS//////
+/////////////////
+
+.transform(@transforms) {
+  -webkit-transform: @transforms;
+  -moz-transform: @transforms;
+  -ms-transform: @transforms;
+  -o-transform: @transforms;
+  transform: @transforms;
+}
+
+.rotate(@deg) {
+  .transform(rotate(@deg));
+}
+
+.scale(@scale) {
+  .transform(scale(@scale));
+}
+
+.scale(@x, @y) {
+  .transform(scale(@x, @y));
+}
+
+.translate(@x, @y) {
+  .transform(translate(@x, @y));
+}
+
+.skew(@xdeg, @ydeg) {
+  .transform(skew(@xdeg, @ydeg));
+}
+
+.transform-origin(@origin) {
+  -webkit-transform-origin: @origin;
+  -moz-transform-origin: @origin;
+  -ms-transform-origin: @origin;
+  -o-transform-origin: @origin;
+  transform-origin: @origin;
+}
+
+.background-size(@size) {
+  -webkit-background-size: @size;
+  -moz-background-size: @size;
+  -ms-background-size: @size;
+  -o-background-size: @size;
+  background-size: @size;
+}
+
+.transition(@transition) {
+  -webkit-transition: @transition;
+  -moz-transition: @transition;
+  -ms-transition: @transition;
+  -o-transition: @transition;
+  transition: @transition;
+}
+
+.transition(@transition, @transition-two) {
+  -webkit-transition: @transition, @transition-two;
+  -moz-transition: @transition, @transition-two;
+  -ms-transition: @transition, @transition-two;
+  -o-transition: @transition, @transition-two;
+  transition: @transition, @transition-two;
+}
+
+.animation(@animation) {
+  -webkit-animation: @animation;
+  -moz-animation: @animation;
+  -ms-animation: @animation;
+  -o-animation: @animation;
+  animation: @animation;
+}
+
+.animation-delay(@delay) {
+  -webkit-animation-delay: @delay;
+  -moz-animation-delay: @delay;
+  -ms-animation-delay: @delay;
+  -o-animation-delay: @delay;
+  animation-delay: @delay;
+}
+
+.box-sizing(@value) {
+  box-sizing: @value;
+  -webkit-box-sizing: @value;
+  -moz-box-sizing: @value;
+}
+
